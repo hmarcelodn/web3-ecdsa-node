@@ -29,3 +29,7 @@ The server folder contains a node.js server using [express](https://expressjs.co
 The application should connect to the default server port (3042) automatically! 
 
 _Hint_ - Use [nodemon](https://www.npmjs.com/package/nodemon) instead of `node` to automatically restart the server on any changes.
+
+### Approach
+This project uses signatures to transfer between different addresses. The wallet will provide a random phrase which needs to be signed with the `./server/scripts/signature-tool.js` which will ask the phrase and the private key. The signature can be copied and pasted in the signature field and it will get the sender address and the balance. Then, you will be able to transfer to another account. In the `./server/outputs` you will get a few key-pairs I created for the sake of simplicity. If you want to generate key-pairs you can use `./server/scripts/generate.js`.
+
