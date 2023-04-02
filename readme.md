@@ -33,3 +33,16 @@ _Hint_ - Use [nodemon](https://www.npmjs.com/package/nodemon) instead of `node` 
 ### Approach
 This project uses signatures to transfer between different addresses. The wallet will provide a random phrase which needs to be signed with the `./server/scripts/signature-tool.js` which will ask the phrase and the private key. The signature can be copied and pasted in the signature field and it will get the sender address and the balance. Then, you will be able to transfer to another account. In the `./server/outputs` you will get a few key-pairs I created for the sake of simplicity. If you want to generate key-pairs you can use `./server/scripts/generate.js`.
 
+#### Signature tool 
+
+```sh
+node ./server/scripts/signature-tool.js
+```
+
+<img width="734" alt="Screen Shot 2023-04-02 at 20 17 36" src="https://user-images.githubusercontent.com/5897525/229384437-83bd9a35-3fb5-4317-b624-4825a26f58ba.png">
+
+#### Sample Page
+<img width="1396" alt="Screen Shot 2023-04-02 at 20 19 12" src="https://user-images.githubusercontent.com/5897525/229384400-7cdc1096-8522-4bb6-89ef-11fa786f0609.png">
+
+
+
